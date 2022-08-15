@@ -16,7 +16,6 @@ app.get('/', (req: Request, res: Response) => {
 
 app.use('/', routes)
 
-app.listen(3000, () => {
-    console.log("Welcome to http://localhost:3000");
-
-})
+app.listen(process.env.PORT || 3006, () => {
+    console.log("Welcome to server");
+});
