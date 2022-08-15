@@ -30,7 +30,7 @@
       const getQR = () => {
         $.ajax({
           method: "post",
-          url: "http://localhost:3000/generateQR",
+          url: "https://prompt-pay-project.herokuapp.com/generateQR",
           data: {
             phoneno: $("#phone").val(),
             amount: parseFloat($("#amount").val()),
