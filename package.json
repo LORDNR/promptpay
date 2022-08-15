@@ -1,0 +1,30 @@
+{
+  "name": "promptpay",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/node": "^18.7.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "lodash": "^4.17.21",
+    "nodemon": "^2.0.19",
+    "promptpay-qr": "^0.5.0",
+    "qrcode": "^1.5.1",
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.182",
+    "@types/qrcode": "^1.4.2",
+    "typescript": "^4.7.4"
+  }
+}
