@@ -6,7 +6,7 @@ export const routes = Router()
 
 routes.post('/generateQR', async (req: Request, res: Response) => {
     const phoneNo = String(req.body.phoneno)
-    const amount = await parseFloat(_.get(req, ["body", "amount"]))
+    const amount = parseFloat(_.get(req, ["body", "amount"]))
     const payload = generatePayload(phoneNo, { amount })
     const option = {
         color: {
@@ -14,7 +14,6 @@ routes.post('/generateQR', async (req: Request, res: Response) => {
             light: "#fff"
         }
     }
-
     QRCode.toDataURL(payload, option, (err, url) => {
         if (err) {
             console.log('generate fail');
